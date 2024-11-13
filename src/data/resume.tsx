@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Vijay Murugan",
   initials: "M",
-  url: "#",
+  url: "https://vijaymurugansite.vercel.app",
   location: "Chennai, IN",
   description: "Engineer, Investor & Technopreneur",
   summary:
