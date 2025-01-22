@@ -6,20 +6,20 @@ export const DATA = {
   initials: "M",
   url: "https://vijaymurugansite.vercel.app",
   location: "Chennai, IN",
-  description: "Engineer, Investor & Technopreneur",
+  description: "Self Taught Engineer & Economist",
   summary:
-    "The no. 1 reason why India can't is the fact that we love acquiring STATUS more than becoming SKILLFUL... And we Indians likes choosing to become skillful only and only if when we assume that our time and investment on a particular skill gonna pay us in the form of Monetary benifits and more than that,",
+    "I'm a software engineer based in India who worked for Canada, UK, Singapore & Dubai clients.I began my tech journey at 16, teaching myself to code and building applications. later pursuing a BSc in computer science. My path led me to freelancing in software development, where I've delivered more than 25+ successful projects, spoken at meetups, and found a little interest in Economics and Numbers following that I pursuing an MBA in Distances Education.",
   avatarUrl: "/me.png",
   skills: [
     "Javascript",
-    "Solidity",
     "React.js",
     "Next.js",
-    "MongoDB",
     "Node.js",
     "Express.js",
+    "MongoDB",
     "Git & Github",
     "React Native",
+    "Figma",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -156,100 +156,6 @@ export const DATA = {
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
   hackathons: [
