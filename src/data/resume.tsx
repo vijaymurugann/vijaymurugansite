@@ -6,9 +6,9 @@ export const DATA = {
   initials: "M",
   url: "https://vijaymurugansite.vercel.app",
   location: "Chennai, IN",
-  description: "Self Taught Engineer & Economist",
+  description: "Self Taught Software Developer",
   summary:
-    "I'm a software engineer based in India who worked for Canada, UK, Singapore & Dubai clients.I began my tech journey at 16, teaching myself to code and building applications. later pursuing a BSc in computer science. My path led me to freelancing in software development, where I've delivered more than 25+ successful projects, spoken at meetups, and found a little interest in Economics and Numbers following that I pursuing an MBA in Distances Education.",
+    "I'm a software developer based in India who worked for Canada, UK, Singapore & Dubai clients.I began my tech journey at 16, teaching myself to code and building applications. later pursuing a BSc in computer science. My path led me to freelancing in software development, where I've delivered more than 25+ successful projects, spoken at meetups, and found a little interest in Economics and Numbers following that I pursuing an MBA in Distances Education.",
   avatarUrl: "/me.png",
   skills: [
     "Javascript",
@@ -130,21 +130,22 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
+      title: "Anypad Launchpad",
       href: "https://chatcollect.com",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "A crypto launch pad with whitelist, KYC, and token distribution features. The platform is built on top of the Binance Smart Chain and uses the Ether.js & Wagmi library to interact with the blockchain.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "MongoDB",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Ether.js",
+        "Hero UI",
+        "Wagmi",
+        "Solidity",
+        "Hardhat",
       ],
       links: [
         {
@@ -153,9 +154,34 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/anypad-min.png",
+      video: "",
+    },
+    {
+      title: "Altpoints",
+      href: "https://chatcollect.com",
+      dates: "May 2024 - June 2024",
+      active: true,
+      description:
+        "Crypto Launchpad's campaigns for users to gain a special allocation of token distribution & for projects to get a traction on there socials and products.",
+      technologies: [
+        "Next.js",
+        "Javascript",
+        "MongoDB",
+        "TailwindCSS",
+        "Hero UI",
+        "Twitter API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/altpoints.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
   ],
   hackathons: [

@@ -47,7 +47,7 @@ export default function Page() {
           {/* <Markdown className="prose max-w-full text-pretty font-sans text-md text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown> */}
-          <div className="mt-4 max-w-full flex flex-wrap items-start gap-1 font-sans text-md text-muted-foreground">
+          <div className="mt-4 max-w-full flex flex-wrap items-start gap-1 font-sans text-pretty text-sm lg:text-md text-muted-foreground">
             {DATA.summary.split(" ").map((word, i) => (
               <BlurFade key={i} delay={BLUR_FADE_DELAY * 6 + i * 0.01}>
                 {word}
@@ -101,9 +101,9 @@ export default function Page() {
                   My Projects
                 </div> */}
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
-                  Check out my latest work
+                  Latest Works...
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-md/relaxed xl:text-md/relaxed">
+                <p className="text-muted-foreground md:text-md/relaxed lg:text-md/relaxed xl:text-md/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
                   websites to complex web applications. Here are a few of my
                   favorites.
