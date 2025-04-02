@@ -158,7 +158,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Altpoints",
+      title: "Altpoints App",
       href: "https://chatcollect.com",
       dates: "May 2024 - June 2024",
       active: true,
@@ -179,9 +179,33 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/altpoints.png",
-      video:
-        "",
+      image: "/altpoints-2.png",
+      video: "",
+    },
+    {
+      title: "AltForge Website",
+      href: "https://www.altforge.io/",
+      dates: "Jan 2025",
+      active: true,
+      description:
+        "A decentralised launchpad connecting investors with the projects they seek, while providing fundraising, KOLs, and advisory support both pre and post-launch.",
+      technologies: [
+        "Next.js",
+        "TailwindCSS",
+        "Hero UI",
+        "Custom CSS",
+        "Spline 3D",
+        "Figma",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.altforge.io/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/altforge.png",
+      video: "",
     },
   ],
   hackathons: [
