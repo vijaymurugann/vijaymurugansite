@@ -26,7 +26,7 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "mailtovijaymurugan@gmail.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -130,8 +130,29 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Anypad Landing Page",
+      href: "https://anypad.io/",
+      dates: "May 2025 - On going",
+      active: true,
+      description:"The launchpad to invest in the future of Web3 A cutting-edge multi-chain launchpad designed to connect forward-thinking investors with groundbreaking crypto projects seeking value add and support",
+      technologies: [
+        "Next.js",
+        "Magic UI",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://anypad.io/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/anypad-landing-page.png",
+      video: "",
+    },
+    {
       title: "Anypad Launchpad",
-      href: "https://chatcollect.com",
+      href: "https://launchpad.anypad.io/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
@@ -150,7 +171,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://launchpad.anypad.io/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -159,7 +180,7 @@ export const DATA = {
     },
     {
       title: "Altpoints App",
-      href: "https://chatcollect.com",
+      href: "https://altpoints.vercel.app/",
       dates: "May 2024 - June 2024",
       active: true,
       description:
@@ -175,7 +196,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://altpoints.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
