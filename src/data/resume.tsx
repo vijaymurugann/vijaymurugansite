@@ -20,6 +20,8 @@ export const DATA = {
     "Git & Github",
     "React Native",
     "Figma",
+    "spline 3d",,
+    "cursor"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -134,12 +136,9 @@ export const DATA = {
       href: "https://anypad.io/",
       dates: "May 2025 - On going",
       active: true,
-      description:"The launchpad to invest in the future of Web3 A cutting-edge multi-chain launchpad designed to connect forward-thinking investors with groundbreaking crypto projects seeking value add and support",
-      technologies: [
-        "Next.js",
-        "Magic UI",
-        "TailwindCSS",
-      ],
+      description:
+        "The launchpad to invest in the future of Web3 A cutting-edge multi-chain launchpad designed to connect forward-thinking investors with groundbreaking crypto projects seeking value add and support",
+      technologies: ["Next.js", "Magic UI", "TailwindCSS"],
       links: [
         {
           type: "Website",
