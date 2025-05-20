@@ -199,7 +199,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/altpoints-2.png",
+      image: "/altpoints.png",
       video: "",
     },
     {
