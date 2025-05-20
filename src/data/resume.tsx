@@ -225,7 +225,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/altforge.png",
+      image: "/altforge-landing.png",
       video: "",
     },
   ],
