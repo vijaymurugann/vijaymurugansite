@@ -24,8 +24,7 @@ export const DATA = {
     "cursor"
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  
   ],
   contact: {
     email: "mailtovijaymurugan@gmail.com",
