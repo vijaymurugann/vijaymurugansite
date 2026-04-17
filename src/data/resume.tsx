@@ -20,12 +20,11 @@ export const DATA = {
     "Git & Github",
     "React Native",
     "Figma",
-    "spline 3d",,
-    "cursor"
+    "spline 3d",
+    ,
+    "cursor",
   ],
-  navbar: [
-  
-  ],
+  navbar: [],
   contact: {
     email: "mailtovijaymurugan@gmail.com",
     tel: "+123456789",
@@ -69,47 +68,48 @@ export const DATA = {
 
   work: [
     {
-      company: "Alpha X Studio",
+      company: "Calpyet Technologies",
+      badges: [],
+      location: "Chennai, IN",
+      title: "Full Stack Engineer",
+      logoUrl: "/calpyte.png",
+      start: "Mar 25",
+      end: "Mar 26",
+    },
+    {
+      company: "Seerakku",
       badges: ["Current"],
       location: "Chennai, IN",
-      title: "Co-founder",
-      logoUrl: "/lime.svg",
-      start: "January 2025",
-      description: "",
-    },
-    {
-      company: "Freelancing",
-      badges: ["2yr"],
-      location: "Remote",
-      title: "Web & Blockchain Developer",
-      logoUrl: "/up.png",
-      start: "January 2023",
-      end: "December 2024",
-      description: "",
-    },
-    // {
-    //   company: "Mzoid",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Chief Technical Officer",
-    //   logoUrl: "/mzoid.jpg",
-    //   start: "January 2023",
-    //   end: "August 2023",
-    //   description:
-    //     "MZOID (OPC) Pvt Ltd is a forward-thinking renewable energy startup based in Tamilnadu, India, dedicated to driving sustainable progress and environmental stewardship. With a vision to create a greener and brighter future for South India, MZOID offers comprehensive Engineering, Procurement, and Construction (EPC) solutions for both domestic and industrial sectors. At MZOID, we firmly believe that the transition to renewable energy is essential to combat climate change and ensure energy security for generations to come.",
-    // },
-    {
-      company: "Bring Back Bees",
-      href: "http://www.bringbackbees.in/",
-      badges: ["7mo"],
-      location: "Chennai, India",
       title: "Software Developer",
-      logoUrl: "/BBB.jpg",
-      start: "June 2022",
-      end: "December 2022",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+      logoUrl: "/Seerakku.svg",
+      start: "Feb 2024",
+      end: "Mar 2025",
+      description: "",
     },
+    {
+      company: "Mzoid",
+      badges: ["2yr"],
+      location: "Chennai, IN",
+      title: "Junior Blockchain Developer",
+      logoUrl: "/mzoid.jpg",
+      start: "July 2022",
+      end: "Feb 2024",
+      description:
+        "MZOID (OPC) Pvt Ltd is a forward-thinking renewable energy startup based in Tamilnadu, India, dedicated to driving sustainable progress and environmental stewardship. With a vision to create a greener and brighter future for South India, MZOID offers comprehensive Engineering, Procurement, and Construction (EPC) solutions for both domestic and industrial sectors. At MZOID, we firmly believe that the transition to renewable energy is essential to combat climate change and ensure energy security for generations to come.",
+    },
+
+    // {
+    //   company: "Bring Back Bees",
+    //   href: "http://www.bringbackbees.in/",
+    //   badges: ["7mo"],
+    //   location: "Chennai, India",
+    //   title: "Software Developer",
+    //   logoUrl: "/BBB.jpg",
+    //   start: "June 2022",
+    //   end: "December 2022",
+    //   description:
+    //     "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+    // },
   ],
   education: [
     {
@@ -133,7 +133,7 @@ export const DATA = {
     {
       title: "Anypad Landing Page",
       href: "https://anypad.io/",
-      dates: "May 2025 - On going",
+      dates: "May 2025 - June 2025",
       active: true,
       description:
         "The launchpad to invest in the future of Web3 A cutting-edge multi-chain launchpad designed to connect forward-thinking investors with groundbreaking crypto projects seeking value add and support",
