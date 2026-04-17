@@ -75,6 +75,7 @@ export const DATA = {
       logoUrl: "/calpyte.png",
       start: "Mar 25",
       end: "Mar 26",
+      href: "#",
     },
     {
       company: "Seerakku",
@@ -84,6 +85,8 @@ export const DATA = {
       logoUrl: "/Seerakku.svg",
       start: "Feb 2024",
       end: "Mar 2025",
+      href: "#",
+
       description: "",
     },
     {
@@ -94,6 +97,7 @@ export const DATA = {
       logoUrl: "/mzoid.jpg",
       start: "July 2022",
       end: "Feb 2024",
+      href: "#",
       description:
         "MZOID (OPC) Pvt Ltd is a forward-thinking renewable energy startup based in Tamilnadu, India, dedicated to driving sustainable progress and environmental stewardship. With a vision to create a greener and brighter future for South India, MZOID offers comprehensive Engineering, Procurement, and Construction (EPC) solutions for both domestic and industrial sectors. At MZOID, we firmly believe that the transition to renewable energy is essential to combat climate change and ensure energy security for generations to come.",
     },
