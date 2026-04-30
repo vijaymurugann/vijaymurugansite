@@ -5,7 +5,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { DATA } from "@/data/resume";
+import { DATA, PROJECT_SECTIONS } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -96,6 +96,27 @@ export default function Page() {
             ))}
           </div>
         </section>
+        <section id="certificates">
+          <div className="flex min-h-0 flex-col gap-y-3">
+            <BlurFade delay={BLUR_FADE_DELAY * 11}>
+              <h2 className="text-xl font-bold">Certificates</h2>
+            </BlurFade>
+            {DATA.certificates.map((cert, id) => (
+              <BlurFade
+                key={cert.name}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+                <ResumeCard
+                  href={cert.href}
+                  logoUrl={cert.image}
+                  altText={cert.issuer}
+                  title={cert.name}
+                  subtitle={cert.issuer}
+                  period={cert.received}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </section>
         <section id="work">
           <div className="flex min-h-0 flex-col gap-y-3">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -124,7 +145,7 @@ export default function Page() {
       <div className="div flex-1 p-4 py-12">
         <section id="projects">
           <div className="space-y-12 w-full ">
-            <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <BlurFade delay={BLUR_FADE_DELAY * 13}>
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2 text-left">
                   <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -141,24 +162,41 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="grid grid-cols-3 gap-3 mx-auto">
-              {DATA.projects.map((project, id) => (
-                <BlurFade
-                  key={project.title}
-                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
-                  <ProjectCard
-                    href={project.href}
-                    key={project.title}
-                    title={project.title}
-                    description={project.description}
-                    dates={project.dates}
-                    tags={project.technologies}
-                    image={project.image}
-                    video={project.video}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
+            <div className="max-w-4xl mx-auto space-y-12">
+              {PROJECT_SECTIONS.map(({ category, title }, sectionIdx) => {
+                const inCategory = DATA.projects.filter(
+                  (p) => p.category === category
+                );
+                return (
+                  <div key={category}>
+                    <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl mb-6">
+                      {title}
+                    </h2>
+                    <div className="grid grid-cols-3 gap-3 mx-auto">
+                      {inCategory.map((project, id) => (
+                        <BlurFade
+                          key={project.title}
+                          delay={
+                            BLUR_FADE_DELAY * 14 +
+                            sectionIdx * 0.15 +
+                            id * 0.05
+                          }>
+                          <ProjectCard
+                            href={project.href}
+                            title={project.title}
+                            description={project.description}
+                            dates={project.dates}
+                            tags={project.technologies}
+                            image={project.image}
+                            video={project.video}
+                            links={project.links}
+                          />
+                        </BlurFade>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -207,7 +245,7 @@ export default function Page() {
 
         <section id="contact">
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-            <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <BlurFade delay={BLUR_FADE_DELAY * 17}>
               <div className="space-y-3">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Contact
