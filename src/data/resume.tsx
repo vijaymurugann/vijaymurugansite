@@ -1,6 +1,16 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
+export type ProjectCategory = "web3" | "landingPages" | "aiApps" | "saas";
+
+export const PROJECT_SECTIONS: { category: ProjectCategory; title: string }[] =
+  [
+    { category: "web3", title: "Web3" },
+    { category: "landingPages", title: "Landing pages" },
+    { category: "aiApps", title: "AI Apps" },
+    { category: "saas", title: "SaaS" },
+  ];
+
 export const DATA = {
   name: "Vijay Murugan",
   initials: "M",
@@ -21,10 +31,12 @@ export const DATA = {
     "React Native",
     "Figma",
     "spline 3d",
-    ,
     "cursor",
   ],
-  navbar: [],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  ],
   contact: {
     email: "mailtovijaymurugan@gmail.com",
     tel: "+123456789",
@@ -76,6 +88,7 @@ export const DATA = {
       start: "Mar 25",
       end: "Mar 26",
       href: "#",
+      description: "",
     },
     {
       company: "Seerakku",
@@ -132,9 +145,47 @@ export const DATA = {
       start: "2019",
       end: "2022",
     },
+    {
+      school: "Sunshine Academy",
+      degree: "High School",
+      logoUrl: "/sunshineacademy-logo.jpeg",
+      start: "2017",
+      end: "2019",
+    },
+  ],
+  certificates: [
+    {
+      name: "AI Agent Fundamentals",
+      issuer: "Databricks",
+      image: "/cert-databricks.svg",
+      received: "Dec 2025",
+      href: "https://credentials.databricks.com/",
+    },
+    {
+      name: "Gen AI Fundamentals",
+      issuer: "Databricks",
+      image: "/cert-databricks.svg",
+      received: "Dec 2025",
+      href: "https://credentials.databricks.com/",
+    },
+    {
+      name: "Introduction to Generative AI",
+      issuer: "Google",
+      image: "/cert-google.svg",
+      received: "Dec 2025",
+      href: "https://www.cloudskillsboost.google/course_templates/536",
+    },
+    {
+      name: "Vibe Coding 101 with Replit",
+      issuer: "DeepLearning.AI",
+      image: "/cert-deeplearning.svg",
+      received: "Nov 2025",
+      href: "https://www.coursera.org/account/accomplishments/verify/0904c27c-ff38-4450-a23b-864a03a6cd60",
+    },
   ],
   projects: [
     {
+      category: "landingPages" as const,
       title: "Anypad Landing Page",
       href: "https://anypad.io/",
       dates: "May 2025 - June 2025",
@@ -153,6 +204,7 @@ export const DATA = {
       video: "",
     },
     {
+      category: "web3" as const,
       title: "Anypad Launchpad",
       href: "https://launchpad.anypad.io/",
       dates: "Jan 2024 - Feb 2024",
@@ -181,6 +233,7 @@ export const DATA = {
       video: "",
     },
     {
+      category: "web3" as const,
       title: "Altpoints App",
       href: "https://altpoints.vercel.app/",
       dates: "May 2024 - June 2024",
@@ -206,6 +259,7 @@ export const DATA = {
       video: "",
     },
     {
+      category: "landingPages" as const,
       title: "AltForge Website",
       href: "https://www.altforge.io/",
       dates: "Jan 2025",
@@ -228,6 +282,120 @@ export const DATA = {
         },
       ],
       image: "/altforge-landing.png",
+      video: "",
+    },
+    {
+      category: "web3" as const,
+      title: "Mock NFT Marketplace",
+      href: "https://example.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Placeholder multi-chain listings and royalties UI — swap for a real project when ready.",
+      technologies: ["Next.js", "Wagmi", "Solidity"],
+      links: [
+        {
+          type: "Demo",
+          href: "https://example.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/cert-google.svg",
+      video: "",
+    },
+    {
+      category: "landingPages" as const,
+      title: "Mock SaaS Landing",
+      href: "https://example.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Placeholder hero, pricing, and FAQ sections — replace with shipped work.",
+      technologies: ["Next.js", "TailwindCSS", "Figma"],
+      links: [
+        {
+          type: "Demo",
+          href: "https://example.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/calpyte.png",
+      video: "",
+    },
+    {
+      category: "aiApps" as const,
+      title: "Mock RAG Assistant",
+      href: "https://example.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Placeholder chat over documents — swap link and copy when you ship the real app.",
+      technologies: ["Next.js", "OpenAI", "PostgreSQL"],
+      links: [
+        {
+          type: "Demo",
+          href: "https://example.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/cert-google.svg",
+      video: "",
+    },
+    {
+      category: "aiApps" as const,
+      title: "Mock Image Lab",
+      href: "https://example.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Placeholder image generation flows for portfolio grid only.",
+      technologies: ["React", "API Routes", "Zod"],
+      links: [
+        {
+          type: "Demo",
+          href: "https://example.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/calpyte.png",
+      video: "",
+    },
+    {
+      category: "saas" as const,
+      title: "Mock CRM Lite",
+      href: "https://example.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Placeholder pipelines and contacts dashboard — illustrative only.",
+      technologies: ["Next.js", "Prisma", "Stripe"],
+      links: [
+        {
+          type: "Demo",
+          href: "https://example.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/cert-google.svg",
+      video: "",
+    },
+    {
+      category: "saas" as const,
+      title: "Mock Invoice Hub",
+      href: "https://example.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Placeholder invoicing and client portal — swap URLs later.",
+      technologies: ["Next.js", "TailwindCSS", "Resend"],
+      links: [
+        {
+          type: "Demo",
+          href: "https://example.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/calpyte.png",
       video: "",
     },
   ],
