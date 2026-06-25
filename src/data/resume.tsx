@@ -148,7 +148,7 @@ export const DATA = {
     {
       school: "Sunshine Academy",
       degree: "High School",
-      logoUrl: "/sunshineacademy-logo.jpeg",
+      logoUrl: "/sunshine-logo.jpg",
       start: "2017",
       end: "2019",
     },
@@ -157,14 +157,14 @@ export const DATA = {
     {
       name: "AI Agent Fundamentals",
       issuer: "Databricks",
-      image: "/cert-databricks.svg",
+      image: "/cert-databricks.jpeg",
       received: "Dec 2025",
       href: "https://credentials.databricks.com/",
     },
     {
       name: "Gen AI Fundamentals",
       issuer: "Databricks",
-      image: "/cert-databricks.svg",
+      image: "/cert-databricks.jpeg",
       received: "Dec 2025",
       href: "https://credentials.databricks.com/",
     },
@@ -178,7 +178,7 @@ export const DATA = {
     {
       name: "Vibe Coding 101 with Replit",
       issuer: "DeepLearning.AI",
-      image: "/cert-deeplearning.svg",
+      image: "/cert-deeplearning.jpg",
       received: "Nov 2025",
       href: "https://www.coursera.org/account/accomplishments/verify/0904c27c-ff38-4450-a23b-864a03a6cd60",
     },

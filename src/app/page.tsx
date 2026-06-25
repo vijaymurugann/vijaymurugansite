@@ -13,8 +13,8 @@ const BLUR_FADE_DELAY = 0.07;
 
 export default function Page() {
   return (
-    <main className="flex flex-row relative  min-h-[100dvh]">
-      <div className="div sticky top-0 p-4 py-12 max-w-sm mx-auto h-full flex flex-col gap-6 border-r border-gray-200">
+    <main className="flex flex-col md:flex-row relative min-h-[100dvh]">
+      <div className="relative md:sticky md:top-0 p-4 py-12 max-w-sm mx-auto md:h-screen flex flex-col gap-6 md:border-r border-gray-200 overflow-y-auto">
         <section id="hero">
           <div className="mx-auto w-full max-w-2xl space-y-8">
             <div className="gap-2 flex justify-between">
@@ -172,7 +172,7 @@ export default function Page() {
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl mb-6">
                       {title}
                     </h2>
-                    <div className="grid grid-cols-3 gap-3 mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto">
                       {inCategory.map((project, id) => (
                         <BlurFade
                           key={project.title}
