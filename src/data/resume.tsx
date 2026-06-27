@@ -147,6 +147,7 @@ export const DATA = {
     },
     {
       school: "Sunshine Academy",
+      href: "#",
       degree: "High School",
       logoUrl: "/sunshine-logo.jpg",
       start: "2017",
@@ -385,8 +386,7 @@ export const DATA = {
       href: "https://example.com",
       dates: "2025",
       active: true,
-      description:
-        "Placeholder invoicing and client portal — swap URLs later.",
+      description: "Placeholder invoicing and client portal — swap URLs later.",
       technologies: ["Next.js", "TailwindCSS", "Resend"],
       links: [
         {
