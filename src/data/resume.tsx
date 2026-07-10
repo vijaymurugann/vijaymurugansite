@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { GiftIcon, HomeIcon, NotebookIcon } from "lucide-react";
 
 export type ProjectCategory = "web3" | "landingPages" | "aiApps" | "saas";
 
@@ -36,6 +36,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/wishlist", icon: GiftIcon, label: "Wishlist" },
   ],
   contact: {
     email: "mailtovijaymurugan@gmail.com",
