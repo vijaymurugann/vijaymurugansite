@@ -145,12 +145,12 @@ export default function Page() {
       <div className="div flex-1 p-4 py-12">
         <section id="projects">
           <div className="space-y-12 w-full ">
-            <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <BlurFade delay={BLUR_FADE_DELAY * 2}>
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2 text-left">
-                  <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  {/* <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                     My Projects
-                  </div>
+                  </div> */}
                   <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
                     Latest Works...
                   </h2>
@@ -169,15 +169,17 @@ export default function Page() {
                 );
                 return (
                   <div key={category}>
-                    <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl mb-6">
-                      {title}
-                    </h2>
+                    <BlurFade delay={BLUR_FADE_DELAY * 3}>
+                      <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl mb-6">
+                        {title}
+                      </h2>
+                    </BlurFade>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto">
                       {inCategory.map((project, id) => (
                         <BlurFade
                           key={project.title}
                           delay={
-                            BLUR_FADE_DELAY * 14 +
+                            BLUR_FADE_DELAY * 4 +
                             sectionIdx * 0.15 +
                             id * 0.05
                           }>
@@ -245,26 +247,7 @@ export default function Page() {
 
         <section id="contact">
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-            <BlurFade delay={BLUR_FADE_DELAY * 17}>
-              <div className="space-y-3">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Contact
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Get in Touch
-                </h2>
-                <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Want to chat? Just shoot me a dm{" "}
-                  <Link
-                    href={DATA.contact.social.X.url}
-                    className="text-blue-500 hover:underline">
-                    with a direct question on twitter
-                  </Link>{" "}
-                  and I&apos;ll respond whenever I can. I will ignore all
-                  soliciting.
-                </p>
-              </div>
-            </BlurFade>
+          
           </div>
         </section>
       </div>

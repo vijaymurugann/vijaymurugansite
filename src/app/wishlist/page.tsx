@@ -54,12 +54,6 @@ export default function WishlistPage() {
         </BlurFade>
 
         <div className="mb-12 space-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 2}>
-            <div className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-1.5 text-sm font-medium text-background">
-              <Gift className="size-4" />
-              Wishlist
-            </div>
-          </BlurFade>
 
           <BlurFadeText
             delay={BLUR_FADE_DELAY * 3}
