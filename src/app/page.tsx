@@ -167,6 +167,7 @@ export default function Page() {
                 const inCategory = DATA.projects.filter(
                   (p) => p.category === category
                 );
+                if (inCategory.length === 0) return null;
                 return (
                   <div key={category}>
                     <BlurFade delay={BLUR_FADE_DELAY * 3}>
