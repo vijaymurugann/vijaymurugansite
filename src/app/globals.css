@@ -151,4 +151,57 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  /* v2 Portfolio styles matching anandmohanan.com */
+  .v2-bg {
+    background-color: #fbfefb;
+    color: #282728;
+  }
+  .dark .v2-bg {
+    background-color: #000000;
+    color: #e6e6e6;
+  }
+  .v2-border {
+    border-color: #ece9e9;
+  }
+  .dark .v2-border {
+    border-color: #323232;
+  }
+}
+
+@keyframes v2FadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.v2-section-fade {
+  opacity: 0;
+  animation: v2FadeInUp 0.4s ease-out forwards;
+}
+
+.v2-link-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.v2-link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.2s ease-out;
+}
+
+.v2-link-underline:hover::after {
+  width: 100%;
 }
