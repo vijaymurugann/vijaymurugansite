@@ -466,7 +466,8 @@ export default function V2PortfolioPage() {
         </ul>
       </section>
 
-      {/* Section 6: Hackathons & Honors */}
+      {/* Section 6: Hackathons & Honors (Hidden for now) */}
+      {/* 
       <section
         className="mb-16 v2-section-fade"
         style={{ animationDelay: "0.58s" }}
@@ -516,11 +517,12 @@ export default function V2PortfolioPage() {
           ))}
         </ul>
       </section>
+      */}
 
-      {/* Section 7: Connect */}
+      {/* Section 6: Connect */}
       <section
         className="mb-16 v2-section-fade"
-        style={{ animationDelay: "0.64s" }}
+        style={{ animationDelay: "0.58s" }}
         aria-labelledby="connect-heading"
       >
         <h2

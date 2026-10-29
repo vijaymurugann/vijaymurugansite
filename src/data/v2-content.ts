@@ -113,22 +113,22 @@ export const V2_CONTENT: Record<Lang, V2Translation> = {
       {
         name: "Anypad Launchpad",
         href: "https://launchpad.anypad.io/",
-        desc: "Multi-chain crypto launchpad with whitelist, KYC, and token distribution built on Binance Smart Chain using Next.js, TypeScript, MongoDB, Ether.js, and Wagmi.",
+        desc: "Multi-chain crypto launchpad and token distribution platform",
       },
       {
         name: "Altpoints App",
         href: "https://altpoints.vercel.app/",
-        desc: "Community campaign platform for crypto launchpad token allocations and user engagement, integrated with Twitter/X API and MongoDB.",
+        desc: "Community campaign and token reward platform for Web3 projects",
       },
       {
         name: "AltForge Website",
         href: "https://www.altforge.io/",
-        desc: "Decentralized fundraising and KOL advisory launchpad website featuring interactive Spline 3D graphics, Hero UI, and custom CSS animations.",
+        desc: "Decentralized fundraising and KOL advisory launchpad",
       },
       {
         name: "Anypad Landing Page",
         href: "https://anypad.io/",
-        desc: "High-performance Web3 multi-chain investment launchpad landing page built with Next.js, Magic UI, and Tailwind CSS.",
+        desc: "Landing page for a multi-chain Web3 investment launchpad",
       },
     ],
     certTitle: "Certifications",
@@ -260,22 +260,22 @@ export const V2_CONTENT: Record<Lang, V2Translation> = {
       {
         name: "Anypad Launchpad",
         href: "https://launchpad.anypad.io/",
-        desc: "ホワイトリスト、KYC、トークン配布機能を備えたマルチチェーン暗号資産ローンチパッド。Binance Smart Chain上でNext.js、TypeScript、MongoDB、Ether.js、Wagmiを用いて構築。",
+        desc: "マルチチェーン暗号資産ローンチパッド＆トークン配布基盤",
       },
       {
         name: "Altpoints App",
         href: "https://altpoints.vercel.app/",
-        desc: "ローンチパッドのトークン割り当てとエンゲージメント獲得のためのコミュニティキャンペーンプラットフォーム。Twitter/X APIおよびMongoDBと連携。",
+        desc: "Web3プロジェクト向けコミュニティキャンペーン＆リワード基盤",
       },
       {
         name: "AltForge Website",
         href: "https://www.altforge.io/",
-        desc: "インタラクティブなSpline 3Dモデル、Hero UI、カスタムCSSアニメーションを導入した分散型資金調達＆KOLアドバイザリー向けWebサイト。",
+        desc: "分散型資金調達＆KOLアドバイザリーのローンチパッド",
       },
       {
         name: "Anypad Landing Page",
         href: "https://anypad.io/",
-        desc: "Next.js、Magic UI、Tailwind CSSで構築された、Web3マルチチェーン投資ローンチパッド向けの高パフォーマンスランディングページ。",
+        desc: "Web3マルチチェーン投資ローンチパッドのランディングページ",
       },
     ],
     certTitle: "資格・認定",
